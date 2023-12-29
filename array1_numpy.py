@@ -25,3 +25,20 @@ def LimpaVetor(numeros):
 
 LimpaVetor(numeros)
 print(numeros)
+
+
+def bubble_sort(numeros):
+    n = len(numeros)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if numeros[j] > numeros[j + 1]:
+                #numeros[j], numeros[j + 1] = numeros[j + 1], numeros[j]
+                t = numeros[j]
+                numeros[j] = numeros[j+1]
+                numeros[j+1] = t
+
+numeros2 = np.array([1,2,23,5,-1])
+
+bubble_sort(numeros2)
+
+print(numeros2)
