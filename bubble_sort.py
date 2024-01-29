@@ -8,6 +8,7 @@ def bubble_sort(arr):
                 t = arr[j]
                 arr[j]=arr[j+1]
                 arr[j+1]=t
+    return arr
 
 vetor=np.array([10,5,1,33,2,4])
 bubble_sort(vetor)
